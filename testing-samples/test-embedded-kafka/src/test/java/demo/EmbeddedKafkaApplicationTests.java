@@ -100,7 +100,7 @@ public class EmbeddedKafkaApplicationTests {
 		consumer.commitSync();
 
 		assertThat(records.count()).isEqualTo(1);
-		assertThat(new String(records.iterator().next().value())).isEqualTo("FOO");
+		assertThat(new String(records.iterator().next().value())).isEqualTo("foo");
 	}
 
 }
